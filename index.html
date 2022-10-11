@@ -1,166 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Megalith 2023 Coming Soon</title>
-    <style>
-       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
-:root {
-  --yellow:#f5bf23;
-  --black:#111;
-  --white:#fff;
-  --light-color:#666;
-  --light-bg:#eee;
-  --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
-  --border:.1rem solid rgba(0,0,0,.3);
-}
-        * {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  outline: none;
-  border: none;
-  text-decoration: none;
-}
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Internship | IIT Kharagpur</title>
 
-html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  scroll-padding-top: 7rem;
-}
-body{
-  
-  background-image:linear-gradient(to left, #fefefe00, rgb(255, 255, 254)), url(home-slide-2.jpeg)  ;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-   
-  
-}
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
 
-
-
-html::-webkit-scrollbar {
-  width: 1rem;
-}
-
-html::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-html::-webkit-scrollbar-thumb {
-  background: var(--yellow);
-}
-section {
-  padding: 5rem 10%;
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    top: 50%;
-    opacity: 0;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    top: 50%;
-    opacity: 0;
-  }
-}
-.header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  -webkit-box-shadow: var(--box-shadow);
-          box-shadow: var(--box-shadow);
-  padding: 1.5rem 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  z-index: 1000;
-  background: var(--white);
-}
-
-.left-header img{
-  vertical-align: middle;
-  width: 50px;
-}
-
-.header  {
-  font-size: 2.5rem;
-  color: var(--black);
-  text-transform: capitalize;
-}
-
-.header  span {
-  color: red;
-}
-
-.header .navbar a {
-  font-size: 2rem;
-  color: var(--black);
-  text-transform: capitalize;
-  margin: 0 1rem;
-}
-
-.header .navbar a:hover {
-  color: red;
-}
-
-
-
-
-.home  .content h3 {
-  font-size: 5rem;
-  color: var(--black);
-  text-transform: capitalize;
-  text-transform: uppercase;
-}
-
-.home .content p {
-  font-size:3rem;
-  color: var(--black);
-  line-height: 2;
-  
-  padding: 1rem 0;
-}
-
-
-    </style>
 </head>
 <body>
-    <header class="header">
-		<div class="left-header">
-			<img src="/megalith/images/megalogotheme.png">
-			Megalith<span>'23</span>
-        </div>
-		<nav class="navbar">
-			<a href="\megalith\index.html">MIP website</a>
-        </nav>
-    </header>
-  
-    <section class=home >
-    <div class="content" >
-        <h3>Megalith 20<span style="color: red;">23</span></h3>
-        <p>India's Largest Civil Engineering Fest<br>
-        IIT Kharagpur</p>
-        <h3><span style="color: red;">Coming</span> Soon</h3>
-    </div>
-</section>
 
+	<header class="header">
+		<div class="left-header">
+			<a href="\comingsoon\index.html" class="logo"><img src="./images/megalogotheme.png">
+			Megalith<span>'23</span></a>
+		</div>
+		<nav class="navbar">
+			<a href="#home">home</a>
+			<a href="#brochure">Internship Brochure</a>
+			<a href="#main-page">Go to Megalith 2022</a>
+		</nav>
+
+		<div class="icons">
+			<div id="menu-btn" class="fas fa-bars"></div>
+			<div id="login-btn" class="fas fa-user"></div>
+		</div>
+
+		<!-- For Login Form -->
+		<!-- <form action="" class="login-form">
+	      <h3>login form</h3>
+	      <input type="email" placeholder="enter your email" class="box">
+	      <input type="password" placeholder="enter your password" class="box">
+	      <div class="flex">
+	         <input type="checkbox" name="" id="remember-me">
+	         <label for="remember-me">remember me</label>
+	         <a href="#">forgot password?</a>
+	      </div>
+	      <input type="submit" value="login now" class="btn">
+	      <p>don't have an account <a href="#">create one!</a></p>
+	   </form> -->
+
+	</header>
+
+
+<!-- Home section -->
+	<section class="home" id="home">
+		<div class="swiper home-slider">
+
+     	<div class="swiper-wrapper">
+     		<section class="swiper-slide slide" style="background: url(images/home-slide-1.jpeg) no-repeat;">
+            <div class="content">
+               <h3>Megalith Internship Programme</h3>
+               <p>The annual Technical Fest of the Department of Civil Engineering, Indian Institute of Technology Kharagpur</p>
+               <a href="#about" class="btn">get started</a>
+            </div>
+         </section>
+
+         <section class="swiper-slide slide" style="background: url(images/home-slide-2.jpeg) no-repeat;">
+            <div class="content">
+               <h3>Internship Opportunity</h3>
+               <p></p>
+               <a href="#about" class="btn">get started</a>
+            </div>
+	     </section>
+
+	     <section class="swiper-slide slide" style="background: url(images/home-slide-3.jpeg) no-repeat;">
+	        <div class="content">
+	           <h3>from concept to creation</h3>
+	           <p>The fest where you can crunch your concepts to discover astonishing ideas winning marvellous prizes</p>
+	           <a href="#about" class="btn">get started</a>
+	        </div>
+	     </section>
+
+        </div>
+
+	     <div class="swiper-button-next"></div>
+	     <div class="swiper-button-prev"></div>
+	 </div>
+	</section>
+
+	<!-- About Us -->
+	<section class="about" id="about">
+		<h1 class="heading"> about us </h1>
+
+   <div class="row">
+
+      <!-- <div class="video">
+         <video src="images/about-vid.mp4" loop muted autoplay></video>
+      </div> -->
+      <iframe width="420" height="315"
+		src="https://www.youtube.com/embed/AQCj8eHZ7UE">
+		</iframe>
+      <div class="content">
+         <!-- <h3>Thank you showing interest to participate. We will provide you the best work which you dreamt for!</h3> -->
+         <p>Megalith is the annual technical fest of the Department of Civil Engineering, Indian Institute of Technology, Kharagpur held under the aegis of the Civil Engineering Society, IIT Kharagpur and the patronage of the Institution of Civil Engineers (UK), IIT Kharagpur chapter. Since its inception in 2009, Megalith has conquered a huge success in the field of engineering and corporate sector and has grown as largest Civil Engineering Technical Fest of India, offering a diverse range of competitions, workshops and guest lectures.
+         	<br>
+		MIP Interns serve as a connection between their college and our campus i.e. as a nodal point for any kind of communication or promotion. This is a deeply rewarding opportunity both on a personal level and also in terms of career prospects as, being a Intern helps in personality development besides, enhancing your managerial skills.</p>
+         <a href="#services" class="btn">Download Brochure</a>
+      </div>
+
+   </div>
+	</section>
+
+
+	<!-- Incentives/ services -->
+	
+	<section class="services" id="services">
+
+   <h1 class="heading"> Incentives </h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/certificate.png" alt="">
+         <h3>Certificate of Appreciation</h3>
+         <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, necessitatibus.</p> -->
+      </div>
+
+      <div class="box">
+         <img src="images/acco1.png" alt="">
+         <h3>Free accomodation & Registration in Megalith2023!</h3>
+         <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, necessitatibus.</p> -->
+      </div>
+
+      <div class="box">
+         <img src="images/merchandise.png" alt="">
+         <h3>Grab Official Megalith2023 Merchandises!</h3>
+         <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, necessitatibus.</p> -->
+      </div>
+
+      <div class="box">
+         <img src="images/linkedin.png" alt="">
+         <h3>Endorsement for your skills in Linkedin!</h3>
+         <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, necessitatibus.</p> -->
+      </div>
+
+      <div class="box">
+         <img src="images/leadership.png" alt="">
+         <h3>Develop Leadership Skills</h3>
+         <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, necessitatibus.</p> -->
+      </div>
+
+      <div class="box">
+         <img src="images/network.png" alt="">
+         <h3>Build a network in your college!</h3>
+         <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, necessitatibus.</p> -->
+      </div>
+
+      <!-- <div class="box">
+         <img src="images/service-7.png" alt="">
+         <h3>building maintenance</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, necessitatibus.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/service-8.png" alt="">
+         <h3>building renovation</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, necessitatibus.</p>
+      </div> -->
+      
+   </div>
+
+	</section>
+<!--Responsibilities-->
+   <section>
+
+   </section>
+
+
+	
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
 </body>
 </html>
